@@ -1,0 +1,90 @@
+Historico de comandos
+
+ history
+    1  ls
+    2  pwd
+    3  cd bruno
+    4  cd /d
+    5  ls
+    6  cd bruno/
+    7  CD kit-artigo
+    8  cd kit-artigo/code/
+    9  ls
+   10  nano conta-dados.sh
+   11  cp /d/Downloads\ temp/conta_dados.sh code/
+   12  cp /d/Downloads\ temp/conta_dados.sh .
+   13  nano conta_dados.sh
+   14  nano conta_dados.sh
+   15  bash conta-dados.sh
+   16  bash conta-dados.sh ../../dados/temperatura
+   17  bash conta-dados.sh ../../dados/temperatura/*.csv
+   18  ls dados
+   19  ls
+   20  cd ..
+   21  bash conta-dados.sh dados/temperatura/*.csv
+   22  ls
+   23  bash conta-dados.sh /dados/temperatura/*.csv
+   24  history
+   25  git config user.name "Bruno Barauna"
+   26  git config --global user.name "Bruno Barauna"
+   27  git config --global user.email brunobaraunasantos@gmail.com
+   28  git init
+   29  ls -a
+   30  rm - r bla
+   31  rm -r bla
+   32  git add code
+   33  git status
+   34  git commit
+   35  git commit
+   36  git status
+   37  git log
+   38  ls
+   39  rm -r dados/
+   40  python code/baixa_dados.py
+   41  python code/baixa_dados.py ../dados
+   42  ls
+   43  ls -a
+   44  git status
+   45  git status
+   46  git add .gitignore
+   47  git commit
+   48  git status
+   49  git log
+   50  cd code
+   51  cd ..
+   52  git diff
+   53  git status
+   54  git restore dados/conta_dados
+   55  git restore dados/conta_dados.sh
+   56  git restore code/conta_dados.sh
+   57  git status
+   58  git log
+   59  git status
+   60  git remote add origin git@github.com:brunobarauna/kit-exemplo-2025-02.git
+   61  git remote
+   62  git remote -v
+   63  git push -u origin main
+   64  ssh-keygen -t ed25519 -C "brunobaraunasantos@gmail.com"
+   65  ls ~/.ssh
+   66  cat ~/.ssh/id_ed25519
+   67  cat ~/.ssh/id_ed25519.pub
+   68  git push -u origin main
+   69  git status
+   70  ls
+   71  git satus
+   72  git status
+   73  git add README.md
+   74  git status
+   75  git commit
+   76  git satus
+   77  git status
+   78  git push origin main
+   79  git status
+   80  git status
+   81  git add README.md
+   82  git status
+   83  git commit
+   84  git status
+   85  git push origin main
+   86  git status
+   87  history
