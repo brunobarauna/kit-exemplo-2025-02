@@ -1,6 +1,11 @@
 # Analise de variações de temperatura média mensal para diferentes países
 
-**Autores:** Bruno.
+**Autores:** 
+
+1. Bruno
+2. Chico
+3. Jurema
+
 
 ## Abstract 
 
