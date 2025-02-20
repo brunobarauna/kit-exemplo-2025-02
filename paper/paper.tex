@@ -3,6 +3,7 @@
 % Cabeçalho
 % Onde a gente configura o documento
 \documentclass{article}
+\usepackage[brazil]{babel}
 
 
 % Corpo
@@ -10,7 +11,40 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
+\title{Análise de variação de temperatura dos últimos cinco anos}
+\author{Bruno Barauna}
+\maketitle
+
+\begin{abstract}
+Meu resumo legalzão
+\end{abstract}
+
+\section{Introdução}
 
 Escola de verão da USP.
+outra frase aqui
+
+latex
+
+\section{Metodologia}
+\label{sec:metodos}
+Aqui vou descrever tudo que fizemos.
+Ajustamos uma reta aos cinco últimos anos dos dados
+de temperatura média mensal para cada país.
+Assim calculamos a taxa de variação de temperatura recente.
+
+A equação da reta é
+
+\begin{equation}
+T(t) = a t +b,
+\label{eq:reta}
+\end{equation}
+
+\noindent
+onde $T$ é a temperatura, $t$ é o tempo, $a$ é o coeficiente angular e $b$ é o coeficiente linear.
+
+Ultilizamos a equação \ref{reta} em um código Python para fazer o ajuste da 
+reta com mínimos quadrados.
+Isso está decrito na seção \ref{sec:metodos}.
 
 \end{document}
