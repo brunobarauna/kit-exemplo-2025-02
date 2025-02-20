@@ -3,14 +3,17 @@
 #alvo: pre-req1, pre-req2, ...
 #	comando para gerar o alvo
 
-all: resultados/numero_de_dados.txt paper/paper.pdf
+all: resultados/numero_de_dados.txt paper/paper.pdf paper/paises.tex
 	#Nenhum comando, o "all" é um alvo fictício
 	
 clean:
-	rm -r -f -v resultados dados figuras paper/paper.pdf
+	rm -r -f -v resultados dados figuras paper/paper.pdf paper/paises.tex
 	
-paper/paper.pdf: paper/paper.tex figuras/variacao_temperatura.png
+paper/paper.pdf: paper/paper.tex figuras/variacao_temperatura.png paper/paises.tex
 	tectonic -X compile paper/paper.tex
+	
+paper/paises.tex: dados/temperature-data.zip code/lista_paises.py
+	python code/lista_paises.py dados/temperatura/ > paper/paises.tex
 
 resultados/numero_de_dados.txt: dados/temperature-data.zip
 	mkdir -p resultados

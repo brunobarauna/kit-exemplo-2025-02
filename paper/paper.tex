@@ -6,7 +6,11 @@
 \usepackage[brazil]{babel}
 \usepackage{graphicx}
 \usepackage[round,authoryear,sort]{natbib}
+\usepackage{notomath}
 
+\newcommand{\Title}{Análise de variação de temperatura dos últimos vinte anos}
+
+\input{paises.tex}
 % Corpo
 % Onde a gente escreve o texto
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -17,7 +21,7 @@
 \maketitle
 
 \begin{abstract}
-Meu resumo legalzão
+Meu resumo legalzão \Title
 \end{abstract}
 
 \section{Introdução}
@@ -53,6 +57,8 @@ Isso está decrito na seção \ref{sec:metodos}.
 
 \section{Resultados}
 \label{sec:resultados}
+
+Os países analisados foram: \Paises.
 
 Analisamos os dados de 225 países. São muitos para listar aqui. Confia.
 %! - muito por favor
