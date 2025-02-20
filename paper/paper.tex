@@ -4,7 +4,7 @@
 % Onde a gente configura o documento
 \documentclass{article}
 \usepackage[brazil]{babel}
-
+\usepackage{graphicx}
 
 % Corpo
 % Onde a gente escreve o texto
@@ -46,5 +46,23 @@ onde $T$ é a temperatura, $t$ é o tempo, $a$ é o coeficiente angular e $b$ é
 Ultilizamos a equação \ref{reta} em um código Python para fazer o ajuste da 
 reta com mínimos quadrados.
 Isso está decrito na seção \ref{sec:metodos}.
+
+\section{Resultados}
+\label{sec:resultados}
+
+Analisamos os dados de 225 países. São muitos para listar aqui. Confia.
+%! - muito por favor
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=0.5\columnwidth]{../figuras/variacao_temperatura.png}
+	\caption{
+		Variação de temperatura média mensal dos últimos cinco anos.
+		a) Países com as cinco maiores variações de temperatura.
+		b) Países com as cinco menores variações de temperatura.
+	}
+	\label{fig:variacoes}
+\end{figure}
+
+Os resultados da análise de variação de temperatura estão na figura \ref{fig:variacoes}.
 
 \end{document}
