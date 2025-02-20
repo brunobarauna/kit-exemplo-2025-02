@@ -2,7 +2,7 @@
 
 echo "variacao_C_por_ano,pais"
 
-for arquivo in dados/temperatura/a*.csv
+for arquivo in dados/temperatura/b*.csv
 do
 	python $(dirname $0)/variacao_temperatura.py $arquivo
 done
