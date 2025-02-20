@@ -10,7 +10,7 @@ clean:
 	rm -r -f -v resultados dados figuras paper/paper.pdf
 	
 paper/paper.pdf: paper/paper.tex figuras/variacao_temperatura.png
-	tectonic -X compile paper.tex
+	tectonic -X compile paper/paper.tex
 
 resultados/numero_de_dados.txt: dados/temperature-data.zip
 	mkdir -p resultados
