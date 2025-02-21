@@ -26,7 +26,7 @@ data = pd.read_csv(file_path)
 data = data.sort_values(by="variacao_C_por_ano")
 
 # Criando dois subplots
-fig, axes = plt.subplots(2, 1, figsize=(5, 7), layout="constrained")
+fig, axes = plt.subplots(2, 1, figsize=(7, 5), layout="constrained")
 
 # Set o label do eixo y, adiciona um grid e rotaciona os nomes dos países
 for ax in axes:
